@@ -1,0 +1,1 @@
+# doruri_mysql_table_structure
