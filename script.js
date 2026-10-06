@@ -14,8 +14,6 @@ two_btn.addEventListener("click", () => {
     two_table.classList.toggle("on");
 });
 
-//btn_array 생성
-
 let btn_array = [];
 for(let i = 0; i < 3; i++) {
     btn_array.push(`document.querySelector(".btn${i+1}")`);
@@ -28,4 +26,8 @@ for(let i = 0; i < 3; i++) {
     table_array.push(`document.querySelector(".table${i+1}")`);
 }
 
-
+for (let i = 0; i < btn_array.length; i++) {
+    btn_array[i].addEventListener("click", ()=> {
+        
+    });
+}
