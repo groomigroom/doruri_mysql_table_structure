@@ -13,6 +13,7 @@ for(let i = 0; i < 3; i++) {
 
 for (let i = 0; i < btn_array.length; i++) {
     btn_array[i].addEventListener("click", ()=> {
+        btn_array[i].classList.toggle("on");
         table_array[i].classList.toggle("on");
     });
 }
