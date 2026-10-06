@@ -13,3 +13,6 @@ two_btn.addEventListener("click", () => {
     two_btn.classList.toggle("on");
     two_table.classList.toggle("on");
 });
+
+
+let btn_arrays = 
