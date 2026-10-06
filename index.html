@@ -127,7 +127,12 @@
             <thead>
                 <tr>
                     <td>song_main_title_id</td>
-                    
+                    id int auto_increment primary key,
+content varchar(255),
+original_link varchar(255),
+author_userid varchar(255),
+write_date datetime,
+foreign key (author_userid) references login_users(userid) on delete cascade
                 </tr>
             </thead>
             <tbody>
