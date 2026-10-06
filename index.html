@@ -131,9 +131,7 @@
                     <td>original_link</td>
                     <td>author_userid</td>
                     <td>write_date</td>
-
- 
-foreign key (author_userid) references login_users(userid) on delete cascade
+                    <td>foreign key (author_userid)</td>
                 </tr>
             </thead>
             <tbody>
@@ -143,7 +141,7 @@ foreign key (author_userid) references login_users(userid) on delete cascade
                     <td>varchar(255)</td>
                     <td>varchar(255)</td>
                     <td>datetime</td>
-                                   
+                    <td>references login_users(userid) on delete cascade</td>                                 
                 </tr>
             </tbody>
         </table>
