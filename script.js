@@ -15,4 +15,7 @@ two_btn.addEventListener("click", () => {
 });
 
 
-let btn_arrays = 
+let btn_array = [];
+for(let i = 0; i < 3; i++) {
+    btn_array.push(`document.querySelector(".btn${i+1}")`)
+}
