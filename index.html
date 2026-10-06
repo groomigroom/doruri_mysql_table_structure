@@ -36,6 +36,10 @@
         <table class="stable two_table">
             <thead>
                 <tr>
+                    id int auto_increment primary key,
+original_link varchar(255),
+like_userid varchar(255),
+foreign key (like_userid) references login_users(userid) on delete cascade
                     <td>21번 컬럼</td>
                     <td>2번 컬럼</td>
                     <td>3번 컬럼</td>
