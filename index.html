@@ -51,6 +51,25 @@
                 </tr>
             </tbody>
         </table>
+        <!--member_main_entity-->
+        <table class="stable two_table">
+            <thead>
+                <tr>
+                    <td>id</td>
+                    <td>original_link</td>
+                    <td>like_userid</td>
+                    <td>foreign key (like_userid)</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>int auto_increment primary key,</td>
+                    <td>varchar(255)</td>
+                    <td>varchar(255)</td>
+                    <td>references login_users(userid) on delete cascade</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
     <script src="./script.js"></script>
 </body>
