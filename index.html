@@ -127,9 +127,9 @@
             <thead>
                 <tr>
                     <td>id</td>
-                     ,
-content varchar(255),
-original_link varchar(255),
+                    <td>content</td>
+                    <td>original_link</td>
+
 author_userid varchar(255),
 write_date datetime,
 foreign key (author_userid) references login_users(userid) on delete cascade
@@ -138,6 +138,8 @@ foreign key (author_userid) references login_users(userid) on delete cascade
             <tbody>
                 <tr>
                     <td>int auto_increment primary key</td>
+                    <td>varchar(255)</td>
+                    <td>varchar(255)</td>
                                    
                 </tr>
             </tbody>
