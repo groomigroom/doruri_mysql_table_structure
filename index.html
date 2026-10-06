@@ -86,21 +86,23 @@
                 </tr>
             </tbody>
         </table>
-        <!--member_main_entity 4번0ㄴㅇ0ㄹ-ㅇㄴ0-ㄹㅇ-->
-        <table class="stable table3">
+        <!--song_main_entity-->
+        <table class="stable table4">
             <thead>
                 <tr>
                     <td>member_main_title_id</td>
-                    <td>html_title</td>
-                    <td>intro_pp1</td>
-                    <td>intro_pp2</td>
-                    <td>intro_pp3</td>
-                    <td>img_border_color</td>
-                    <td>birth_date</td>
-                    <td>character_names</td>
-                    <td>character_infor</td>
-                    <td>company</td>
-                    <td>img_location</td>
+                    song_main_title_id varchar(255) primary key,
+	html_title varchar(255),
+	intro_pp1 varchar(255),
+	intro_pp2 varchar(255),
+	intro_pp3 varchar(255),
+	img_border_color varchar(255),
+	release_date date,
+	genre varchar(255),
+	agency varchar(255),
+	song_titles json,
+	company varchar(255),
+	img_location varchar(255)
                 </tr>
             </thead>
             <tbody>
