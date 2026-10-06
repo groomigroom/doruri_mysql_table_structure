@@ -126,8 +126,8 @@
         <table class="stable table5">
             <thead>
                 <tr>
-                    <td>song_main_title_id</td>
-                    id int auto_increment primary key,
+                    <td>id</td>
+                     ,
 content varchar(255),
 original_link varchar(255),
 author_userid varchar(255),
@@ -137,7 +137,7 @@ foreign key (author_userid) references login_users(userid) on delete cascade
             </thead>
             <tbody>
                 <tr>
-                    <td>varchar(255) primary key</td>
+                    <td>int auto_increment primary key</td>
                                    
                 </tr>
             </tbody>
