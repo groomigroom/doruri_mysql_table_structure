@@ -14,8 +14,16 @@ two_btn.addEventListener("click", () => {
     two_table.classList.toggle("on");
 });
 
+//btn_array 생성
 
 let btn_array = [];
 for(let i = 0; i < 3; i++) {
-    btn_array.push(`document.querySelector(".btn${i+1}")`)
+    btn_array.push(`document.querySelector(".btn${i+1}")`);
+}
+
+//table_array 생성
+
+let table_array = [];
+for(let i = 0; i < 3; i++) {
+    
 }
