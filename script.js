@@ -25,5 +25,7 @@ for(let i = 0; i < 3; i++) {
 
 let table_array = [];
 for(let i = 0; i < 3; i++) {
-    
+    table_array.push(`document.querySelector(".table${i+1}")`);
 }
+
+
